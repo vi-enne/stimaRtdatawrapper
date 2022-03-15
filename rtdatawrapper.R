@@ -10,4 +10,4 @@ data <- data[data$Data >= "2022-01-01",]
 data <- reshape(data, idvar = "Data", timevar = "Consolidato", direction = "wide")
 colnames(data) <- c("Data", "Consolidato", "Sottostima", "Forte sottostima")
 
-write.csv(data, file = "Rt_sint_Ita_updated_latest.csv", row.names = F)
+write.csv(data, file = "output/Rt_sint_Ita_updated_latest.csv", row.names = F)
